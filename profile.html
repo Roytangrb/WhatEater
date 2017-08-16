@@ -74,6 +74,110 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
+    <div class="row">
+
+        <div class="menu-notify2">
+            <div class="profile-left">
+                <a href="index.html"><i class="fa fa-arrow-left"></i></a>
+                <!--deleted class="menu-link" -->
+            </div>
+            <div class="Profile-mid">
+                <h5 class="pro-link">Profile</h5>
+            </div>
+            <div class="Profile-right">
+                <div id="dd5" class="wrapper-dropdown-5" tabindex="1"><i class="fa fa-user"></i>
+                    <ul class="dropdown">
+                        <li><a href="#">Profile </a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Log Out</a></li>
+                    </ul>
+                    <script type="text/javascript">
+                        function DropDown(el) {
+                            this.dd = el;
+                            this.initEvents();
+                        }
+                        DropDown.prototype = {
+                            initEvents: function() {
+                                var obj = this;
+
+                                obj.dd.on('click', function(event) {
+                                    $(this).toggleClass('active');
+                                    event.stopPropagation();
+                                });
+                            }
+                        }
+                        $(function() {
+
+                            var dd = new DropDown($('#dd5'));
+
+                            $(document).click(function() {
+                                // all dropdowns
+                                $('.wrapper-dropdown-5').removeClass('active');
+                            });
+
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    </br>
+    </br>
+
+    <div class="row">
+        <div class="text-center">
+            <img class="img-circle border-effect" src="images/pic3.png" alt="">
+            <h3>Roy Tang</h3><span><i class="fa fa-mars" aria-hidden="true"></i></span><span>    Lv.</span>
+            <!-- <i class="fa fa-venus" aria-hidden="true"></i>-->
+            <p>footprint:16</p>
+        </div>
+    </div>
+    </br>
+    </br>
+    <div class="container">
+        <div class="row">
+            <div class="parker" id="service">
+                <div class="services">
+                    <h3>Services</h3>
+                    <div class="col-sm-6 goal-icons">
+                        <div class="goal">
+                            <div class=" hi-icon-effect-6">
+                                <a href="#set-6" class="hi-icon glyphicon glyphicon-file"></a>
+                                <h4>我的動態</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 goal-icons">
+                        <div class="goal">
+                            <div class=" hi-icon-effect-6">
+                                <a href="#set-6" class="hi-icon glyphicon glyphicon-print"></a>
+                                <h4>我的花費</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 goal-icons">
+                        <div class="goal">
+                            <div class=" hi-icon-effect-6">
+                                <a href="#set-6" class="hi-icon glyphicon glyphicon-cutlery"></a>
+                                <h4>評價留言</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 goal-icons">
+                        <div class="goal">
+                            <div class=" hi-icon-effect-6">
+                                <a href="#set-6" class="hi-icon glyphicon glyphicon-glass"></a>
+                                <h4>我的收藏</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
