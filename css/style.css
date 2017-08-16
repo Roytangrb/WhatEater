@@ -1843,6 +1843,7 @@ h3.tittle.reserve {
     font-size: 1em;
     cursor: pointer;
     border: 2px solid#EA6153;
+    /* #fae452 */
     outline: none;
     background: #EA6153;
 }
